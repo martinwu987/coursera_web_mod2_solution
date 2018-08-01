@@ -115,13 +115,17 @@ p {
   
 /********** Small devices only **********/
 @media (max-width: 767px) {
-  .col-sm-4 {
+  .col-sm-4, .col-sm-12 {
     float: left;
     border: 1px solid green;
   }
 
   .col-sm-4 {
     width: 33.33%;
+  }
+  
+  .col-sm-12 {
+    width: 100%;
   }
 
 }
@@ -132,9 +136,9 @@ p {
 <h1>Responsive Layout</h1>
 
 <div class="row">
-  <div class="col-lg-4 col-md-4  col-sm-4"><p>Item 1</p></div>
-  <div class="col-lg-4 col-md-4  col-sm-4"><p>Item 2</p></div>
-  <div class="col-lg-4 col-md-4  col-sm-4"><p>Item 3</p></div>
+  <div class="col-lg-4 col-md-6  col-sm-12"><p>Item 1</p></div>
+  <div class="col-lg-4 col-md-6  col-sm-12"><p>Item 2</p></div>
+  <div class="col-lg-4 col-md-12  col-sm-12"><p>Item 3</p></div>
 
 </div>
 
